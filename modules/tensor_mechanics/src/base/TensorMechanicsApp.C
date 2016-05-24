@@ -63,6 +63,7 @@
 #include "ComputeLinearElasticStress.h"
 #include "ComputeFiniteStrainElasticStress.h"
 #include "ComputeEigenstrain.h"
+#include "DislocationEigenstrain.h"
 #include "ComputeVariableBaseEigenStrain.h"
 #include "ComputeVariableEigenstrain.h"
 #include "ComputeThermalExpansionEigenStrain.h"
@@ -223,6 +224,7 @@ TensorMechanicsApp::registerObjects(Factory & factory)
   registerMaterial(ComputeLinearElasticStress);
   registerMaterial(ComputeFiniteStrainElasticStress);
   registerMaterial(ComputeEigenstrain);
+  registerMaterial(DislocationEigenstrain);
   registerMaterial(ComputeVariableBaseEigenStrain);
   registerMaterial(ComputeVariableEigenstrain);
   registerMaterial(ComputeThermalExpansionEigenStrain);
